@@ -1,0 +1,12 @@
+
+header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.imgCarousel {
+    height: 40rem;
+}
+

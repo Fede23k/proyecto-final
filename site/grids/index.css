@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     background-color: #75AADB;
+     
+ }
+
+
+
+ a {
+     text-decoration: none;
+    }
+
+    .noti-cale{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+ 
+    .calendario-div{
+        display: grid;
+        grid-template-areas: "header header header"
+                             "fecha1 fecha2 fecha3"
+                             "deportea1 deportea2 deportea3"
+                             "deporteb1 deporteb2 deporteb3"
+                             "deportec1 deportec2 deportec3";
+         grid-template-rows: repeat(5, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 10PX;
+         background: white;
+    }
+ 
+    .calendario-div ul {
+        list-style: none;
+    }
+ 
+    .calendario-titulo{
+        grid-area: header;
+    }
+    .calendario-titulo h2{
+        text-align: center;
+    }
+ 
+    .listasDeInformacion1{
+        grid-area: fecha1;
+        background-color: white;
+    }
+ 
+    .listasDeInformacion2{
+        grid-area: fecha2;
+        background-color: white;
+    }
+    .listasDeInformacion3{
+     grid-area: fecha3;
+     background-color: white;
+ }
+  .deportea1{
+      grid-area: deportea1;
+      background-color: white;
+  }
+ 
+  .deportea2{
+     grid-area: deportea2;
+     background-color: white;
+ }
+ 
+ .deportea3{
+     grid-area: deportea3;
+     background-color: white;
+ }
+
+@media only screen and (min-width:480px)
+{
+     /*HEADER*/
+
+   header {
+    size: 20vh;
+    display: flex;
+    width: 100%;
+}
+
+header img {
+    width: 48px;
+    height: 35px;
+    display: inline-grid;
+}
+
+
+header nav  {
+    list-style-type: none;
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul {
+     display: flex; 
+     justify-content: space-between;
+     align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    padding-inline: 40px;
+}
+
+.novedades{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 10px solid aqua;
+    border-bottom: 10px solid aqua;
+}
+
+  #olympic {
+    width: 58px;
+    height: 45px;
+}
+
+#letraDeNavegador {
+    font-size: 11px;
+    color: black;
+    font-family: "Lustria", serif; 
+}
+ 
+/*MAIN*/
+
+main {
+    size: 40vh;
+    background-color: #FFFF;
+}
+
+main h1 {
+    font-size:24px;
+    color: #FCBF49;
+    font-family:"Lustria", serif;
+    background-color: #FFFF ; 
+}
+
+/*DIVS*/
+
+ section div {
+     size: 30vh;
+ }
+
+.noticias {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.medallero {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.calendario {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.disciplinas {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+#listasDeInformacion {
+    color: #FFFF;
+    font-family:"Lustria", serif;  
+    font-size: 13px;
+    list-style-type: none;
+}
+
+
+
+}
+
+.calendario-div ul {
+    list-style: none
+}
+
+.calendario-titulo{
+    grid-area: header;
+    
+}
+.calendario-titulo h2{
+    text-align: center;
+    background-color: white;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    size: 10vh;
+    background-color: #FFFF;
+    display: grid;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+ #iconify {
+     width: 24px;
+     height: 24px;
+}
+
+
+@media only screen and (min-width:768px)
+{
+    
+    /*HEADER*/
+
+   header {
+    size: 20vh;
+    display: flex;
+    width: 100%;
+}
+
+header img {
+    width: 83px;
+    height: 52px;
+    display: inline-grid;
+}
+
+
+header nav  {
+    list-style-type: none;
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul {
+     display: flex; 
+     justify-content: space-between;
+     align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    padding-inline: 40px;
+}
+
+.novedades{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 10px solid aqua;
+    border-bottom: 10px solid aqua;
+}
+
+  #olympic {
+    width: 84px;
+    height: 54px;
+}
+
+#letraDeNavegador {
+    font-size: 20px;
+    color: black;
+    font-family: "Lustria", serif; 
+}
+ 
+/*MAIN*/
+
+main {
+    size: 40vh;
+    background-color: #FFFF;
+}
+
+main h1 {
+    font-size:36px;
+    color: #FCBF49;
+    font-family:"Lustria", serif;
+    background-color: #FFFF ; 
+}
+
+/*DIVS*/
+
+ section div {
+     size: 30vh;
+ }
+
+.noticias {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.medallero {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.calendario {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+.disciplinas {
+    font-family:"Lustria", serif; 
+    color: #FFFF;
+    font-size: 36px;
+    list-style-type: none;
+}
+
+#listasDeInformacion {
+    color: #FFFF;
+    font-family:"Lustria", serif;  
+    font-size: 15px;
+    list-style-type: none;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    size: 10vh;
+    background-color: #FFFF;
+    display: grid;
+}
+
+footer img {
+    width: 48px;
+    height: 35px;
+}
+
+ #iconify {
+     width: 24px;
+     height: 24px;
+}
+}
+
+@media only screen and (min-width:1200px)
+{
+
+    /*HEADER*/
+
+   header {
+       size: 20vh;
+       display: flex;
+       width: 100%;
+   }
+
+   header img {
+       width: 133px;
+       height: 79px;
+       display: inline-grid;
+   }
+
+
+   header nav  {
+       list-style-type: none;
+       display: flex;   
+       justify-content: space-between;
+       width: 100%;
+   }
+
+   header nav ul {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+   }
+
+   header nav ul li {
+       list-style: none;
+       padding-inline: 40px;
+   }
+
+   .novedades{
+       width: 100%;
+       height: 40vh;
+       background-color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       border-top: 10px solid aqua;
+       border-bottom: 10px solid aqua;
+   }
+
+     #olympic {
+       width: 113px;
+       height: 81px;
+   }
+
+   #letraDeNavegador {
+       font-size: 24px;
+       color: black;
+       font-family: "Lustria", serif; 
+   }
+    
+   /*MAIN*/
+   
+   main {
+       size: 40vh;
+       background-color: #FFFF;
+   }
+
+   main h1 {
+       font-size:34px;
+       color: #FCBF49;
+       font-family:"Lustria", serif;
+       background-color: #FFFF ; 
+   }
+
+   /*DIVS*/
+
+    section div {
+        size: 30vh;
+    }
+
+   .noticias {
+       font-family:"Lustria", serif; 
+       color: #FFFF;
+       font-size: 64px;
+       list-style-type: none;
+   }
+
+   .medallero {
+       font-family:"Lustria", serif; 
+       color: #FFFF;
+       font-size: 64px;
+       list-style-type: none;
+   }
+
+   .calendario {
+       font-family:"Lustria", serif; 
+       color: #FFFF;
+       font-size: 64px;
+       list-style-type: none;
+   }
+
+   .disciplinas {
+       font-family:"Lustria", serif; 
+       color: #FFFF;
+       font-size: 64px;
+       list-style-type: none;
+   }
+
+   #listasDeInformacion {
+       color: #FFFF;
+       font-family:"Lustria", serif;  
+       font-size: 24px;
+       list-style-type: none;
+   }
+
+
+   /*FOOTER*/
+
+   footer {
+       size: 10vh;
+       background-color: #FFFF;
+       display: grid;
+   }
+
+   footer img {
+       width: 20px;
+       height: 20px;
+   }
+
+    #iconify {
+        width: 36px;
+        height: 36px;
+   }
+}
